@@ -1,0 +1,20 @@
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\application.json
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Decom Bot.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Decom Bot.pdb
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Messaging.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Protocol.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Transport.Tcp.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\mhh.exe
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Newtonsoft.Json.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\System.Threading.Tasks.Dataflow.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.Template.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Messaging.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Protocol.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Lime.Transport.Tcp.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Newtonsoft.Json.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\System.Threading.Tasks.Dataflow.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.xml
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.csprojResolveAssemblyReference.cache
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.dll
+C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.pdb
