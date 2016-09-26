@@ -23,7 +23,7 @@ namespace Decom_Bot
         {
             Console.WriteLine($"From: {message.From} \tContent: {message.Content}");
             switch(message.Content.ToString().ToLower()){
-                case "notas":
+                case "iniciar":
                     await OpenMainMenuAsync(message.From, cancellationToken);
                     break;
                 case "comecar":
@@ -57,7 +57,7 @@ namespace Decom_Bot
                     await OpenEngenhariaMenuAsync(message.From, cancellationToken);
                     break;
                 default:
-                    await OpenContactMenuAsync(message.From, cancellationToken);
+                    await OpenMainMenuAsync(message.From, cancellationToken);
                     break;
             };
         }

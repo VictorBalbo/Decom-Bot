@@ -1,6 +1,6 @@
 ﻿{
-  "identifier": "acadbot",
-  "accessKey": "dFpiQjNT",
+  "identifier": "decombot",
+  "accessKey": "dzRRREV4N01xZzZDaXRiMFF1R0w=",
   "messageReceivers": [
     {
       "type": "PlainTextMessageReceiver",
