@@ -178,12 +178,12 @@ namespace Decom_Bot
 
         private async Task OpenRedesMenuAsync(Node from, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await _sender.SendMessageAsync("💡 O nosso curso de Redes de Computadores foi formado em 202009 partir de modificações profundas no antigo curso de Informática Industrial. Formado pela necessidade do mercado de profissionais habilitados para configurar e dar manutenção dispositivos de comunicação e softwares em equipamentos de redes", from, cancellationToken);
         }
 
         private async Task OpenEngenhariaMenuAsync(Node from, CancellationToken cancellationToken)
         {
-            throw new NotImplementedException();
+            await _sender.SendMessageAsync("💡 O nosso curso de Graduação em Engenharia de Computação é ofertado desde o primeiro semestre de 2007 e possui sólida formação técnico-científica que capacita os alunos a projetar e desenvolver sistemas computacionais de hardware e software", from, cancellationToken);
         }
 
         private async Task OpenContactMenuAsync(Node from, CancellationToken cancellationToken)
