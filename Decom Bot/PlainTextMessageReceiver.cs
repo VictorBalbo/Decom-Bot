@@ -22,8 +22,15 @@ namespace Decom_Bot
         public async Task ReceiveAsync(Message message, CancellationToken cancellationToken)
         {
             Console.WriteLine($"From: {message.From} \tContent: {message.Content}");
-            switch(message.Content.ToString().ToLower()){
+            switch (message.Content.ToString().ToLower())
+            {
                 case "iniciar":
+                case "oi":
+                case "inicio":
+                case "hi":
+                case "hello":
+                case "decom":
+                case "celebrations":
                     await OpenMainMenuAsync(message.From, cancellationToken);
                     break;
                 case "comecar":
@@ -174,16 +181,161 @@ namespace Decom_Bot
         private async Task OpenInformaticaMenuAsync(Node from, CancellationToken cancellationToken)
         {
             await _sender.SendMessageAsync("💡 O nosso curso de Informática começou a funcionar em 1989, com 40 alunos. Era um curso técnico e Informática Industrial, focando em desenvolvimento de software e também em eletrônica. A partir de 2010, o curso sofreu modificações profundas, foi ampliado e passou a ser chamado de Técnico de Informática", from, cancellationToken);
+
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+
+            var documentCollection = new DocumentCollection
+            {
+                Items = new DocumentSelect[]
+                {
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                                Title = "Calendário escolar"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
+                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                                Title = "Matriz currícular"
+                            }
+                        }
+                    }
+                },
+                ItemType = DocumentSelect.MediaType
+            };
+
+            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+
         }
 
         private async Task OpenRedesMenuAsync(Node from, CancellationToken cancellationToken)
         {
-            await _sender.SendMessageAsync("💡 O nosso curso de Redes de Computadores foi formado em 202009 partir de modificações profundas no antigo curso de Informática Industrial. Formado pela necessidade do mercado de profissionais habilitados para configurar e dar manutenção dispositivos de comunicação e softwares em equipamentos de redes", from, cancellationToken);
+            await _sender.SendMessageAsync("💡 O nosso curso de Redes de Computadores foi formado em 2009 partir de modificações profundas no antigo curso de Informática Industrial. Formado pela necessidade do mercado de profissionais habilitados para configurar e dar manutenção dispositivos de comunicação e softwares em equipamentos de redes", from, cancellationToken);
+
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+
+            var documentCollection = new DocumentCollection
+            {
+                Items = new DocumentSelect[]
+                {
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                                Title = "Calendário escolar"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
+                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                                Title = "Matriz currícular"
+                            }
+                        }
+                    }
+                },
+                ItemType = DocumentSelect.MediaType
+            };
+
+            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
         }
 
         private async Task OpenEngenhariaMenuAsync(Node from, CancellationToken cancellationToken)
         {
             await _sender.SendMessageAsync("💡 O nosso curso de Graduação em Engenharia de Computação é ofertado desde o primeiro semestre de 2007 e possui sólida formação técnico-científica que capacita os alunos a projetar e desenvolver sistemas computacionais de hardware e software", from, cancellationToken);
+
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+
+            var documentCollection = new DocumentCollection
+            {
+                Items = new DocumentSelect[]
+                {
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                                Title = "Calendário escolar"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
+                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new WebLink
+                            {
+                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                                Title = "Matriz currícular"
+                            }
+                        }
+                    }
+                },
+                ItemType = DocumentSelect.MediaType
+            };
+
+            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
         }
 
         private async Task OpenContactMenuAsync(Node from, CancellationToken cancellationToken)
