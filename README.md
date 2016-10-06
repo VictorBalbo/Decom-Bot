@@ -10,3 +10,11 @@ For now our chatbot bot is published on 4 channels:
 2. [Facebook Messenger]()
 3. [Telegram]()
 4. [Skype]()
+
+This application was builted for:
+
+# COMPETIÇÃO 
+## DECOM Celebrations 2016: Dev Olympics
+
+![](images/logo-decom-celebrations.png)
+
