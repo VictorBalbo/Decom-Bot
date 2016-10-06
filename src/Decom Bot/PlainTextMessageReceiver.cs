@@ -82,7 +82,7 @@ namespace Decom_Bot
                     await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"), PreviewUri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"), Type = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), Size = 300 }, message.From, cancellationToken);
                     break;
                 default:
-                    await OpenMainMenuAsync(message.From, cancellationToken);
+                    await OpenUnknownMenuAsync(message.From, cancellationToken);
                     break;
             };
         }
