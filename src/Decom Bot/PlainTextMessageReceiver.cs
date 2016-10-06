@@ -22,7 +22,7 @@ namespace Decom_Bot
         public async Task ReceiveAsync(Message message, CancellationToken cancellationToken)
         {
             Console.WriteLine($"From: {message.From} \tContent: {message.Content}");
-            switch (message.Content.ToString().ToLower())
+            switch (message.Content.ToString().ToLower().Trim())
             {
                 case "iniciar":
                 case "oi":
@@ -55,23 +55,30 @@ namespace Decom_Bot
                     await OpenEmailMenuAsync(message.Content.ToString().ToLower(), message.From, cancellationToken);
                     break;
                 case "informatica":
+                case "informática":
                     await OpenInformaticaMenuAsync(message.From, cancellationToken);
                     break;
                 case "redes":
+                case "redes de computadores":
                     await OpenRedesMenuAsync(message.From, cancellationToken);
                     break;
                 case "engenharia de computacao":
+                case "engenharia de computação":
+                case "engenharia":
+                case "computacao":
+                case "computação":
+                case "comp":
                     await OpenEngenhariaMenuAsync(message.From, cancellationToken);
                     break;
                 case "test":
                 case "teste":
                 case "testando":
-                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://lh4.googleusercontent.com/FdIxmdxCYgwe6GJlT30-O-_1C-A_F08OndoOdBKYdK3UmYAXoqZCS9bazC5miIF3lT5WV1cGy5haVcU=w1366-h589"), PreviewUri = new Uri("https://lh4.googleusercontent.com/FdIxmdxCYgwe6GJlT30-O-_1C-A_F08OndoOdBKYdK3UmYAXoqZCS9bazC5miIF3lT5WV1cGy5haVcU=w1366-h589"), Size = 300 }, message.From, cancellationToken);
+                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://media.riffsy.com/images/e10887804999692af1895b2857f0ee90/raw"), PreviewUri = new Uri("https://media.riffsy.com/images/e10887804999692af1895b2857f0ee90/raw"), Type = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), Size = 300 }, message.From, cancellationToken);
                     break;
                 case "valeu":
                 case "vlw":
                 case "obrigado":
-                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://lh5.googleusercontent.com/JylOk6iQ0eQOCZTUjx2wPyuamC-JSdimJthc1dj8jSSr94buZrAcQN2RGbSBr_GwCOdA-mB00M8Et5Y=w1366-h589"), PreviewUri = new Uri("https://lh5.googleusercontent.com/JylOk6iQ0eQOCZTUjx2wPyuamC-JSdimJthc1dj8jSSr94buZrAcQN2RGbSBr_GwCOdA-mB00M8Et5Y=w1366-h589"), Size = 300 }, message.From, cancellationToken);
+                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"), PreviewUri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"), Type = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg), Size = 300 }, message.From, cancellationToken);
                     break;
                 default:
                     await OpenMainMenuAsync(message.From, cancellationToken);
@@ -192,7 +199,7 @@ namespace Decom_Bot
         {
             await _sender.SendMessageAsync("💡 O nosso curso de Informática começou a funcionar em 1989, com 40 alunos. Era um curso técnico e Informática Industrial, focando em desenvolvimento de software e também em eletrônica. A partir de 2010, o curso sofreu modificações profundas, foi ampliado e passou a ser chamado de Técnico de Informática", from, cancellationToken);
 
-            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Informática... 👏", from, cancellationToken);
 
             var documentCollection = new DocumentCollection
             {
@@ -246,7 +253,7 @@ namespace Decom_Bot
         {
             await _sender.SendMessageAsync("💡 O nosso curso de Redes de Computadores foi formado em 2009 partir de modificações profundas no antigo curso de Informática Industrial. Formado pela necessidade do mercado de profissionais habilitados para configurar e dar manutenção dispositivos de comunicação e softwares em equipamentos de redes", from, cancellationToken);
 
-            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Redes... 👏", from, cancellationToken);
 
             var documentCollection = new DocumentCollection
             {
@@ -299,7 +306,7 @@ namespace Decom_Bot
         {
             await _sender.SendMessageAsync("💡 O nosso curso de Graduação em Engenharia de Computação é ofertado desde o primeiro semestre de 2007 e possui sólida formação técnico-científica que capacita os alunos a projetar e desenvolver sistemas computacionais de hardware e software", from, cancellationToken);
 
-            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de informática... 👏", from, cancellationToken);
+            await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Engenharia d Computação... 👏", from, cancellationToken);
 
             var documentCollection = new DocumentCollection
             {
