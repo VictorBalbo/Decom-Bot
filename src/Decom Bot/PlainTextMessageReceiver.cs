@@ -29,6 +29,7 @@ namespace Decom_Bot
                 case "inicio":
                 case "hi":
                 case "hello":
+                case "/start":
                 case "decom":
                 case "celebrations":
                     await OpenMainMenuAsync(message.From, cancellationToken);
@@ -425,6 +426,35 @@ namespace Decom_Bot
                                                 + "\ndecom@decom.cefetmg.br", from, cancellationToken);
                     break;
             }
+        }
+        private async Task OpenUnknownMenuAsync(Node from, CancellationToken cancellationToken)
+        {
+            var select = new Select
+            {
+                Text = "Desculpe, não entendi exatamente sua mensagem. Vamos tentar de uma outra forma. Sua dúvida tem relação à qual dos seguintes temas?",
+            };
+            var selectOptions = new SelectOption[3];
+
+            selectOptions[0] = new SelectOption
+            {
+                Text = "Cursos",
+                Order = 0,
+                Value = new PlainText { Text = "Cursos" }
+            };
+            selectOptions[1] = new SelectOption
+            {
+                Text = "Informações",
+                Order = 1,
+                Value = new PlainText { Text = "Informacoes" }
+            };
+            selectOptions[2] = new SelectOption
+            {
+                Text = "Contatos",
+                Order = 2,
+                Value = new PlainText { Text = "Contatos" }
+            };
+            select.Options = selectOptions;
+            await _sender.SendMessageAsync(select, from, cancellationToken);
         }
     }
 }
