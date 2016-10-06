@@ -260,8 +260,8 @@ namespace Decom_Bot
                         {
                             Value = new WebLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
-                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
+                                Text = "Veja aqui todos os seus horários 😉",
                                 Title = "Horário das aulas"
                             }
                         }
@@ -272,7 +272,7 @@ namespace Decom_Bot
                         {
                             Value = new WebLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
                             }
@@ -301,7 +301,7 @@ namespace Decom_Bot
                         {
                             Value = new WebLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_ensino_superior.pdf"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
                             }
@@ -313,8 +313,8 @@ namespace Decom_Bot
                         {
                             Value = new WebLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
-                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
+                                Text = "Não perca a hora, veja aqui todos os seus horários 😉",
                                 Title = "Horário das aulas"
                             }
                         }
@@ -325,7 +325,7 @@ namespace Decom_Bot
                         {
                             Value = new WebLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
                             }

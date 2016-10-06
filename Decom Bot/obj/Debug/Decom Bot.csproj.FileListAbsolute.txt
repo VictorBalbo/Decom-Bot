@@ -18,3 +18,22 @@ C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\bin\Debug\Takenet.MessagingHu
 C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.csprojResolveAssemblyReference.cache
 C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.dll
 C:\Users\VictorBalbo\Documents\Decom Bot\Decom Bot\obj\Debug\Decom Bot.pdb
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\application.json
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Decom Bot.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Decom Bot.pdb
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Messaging.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Protocol.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Transport.Tcp.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\mhh.exe
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Newtonsoft.Json.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\System.Threading.Tasks.Dataflow.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.Template.dll
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Messaging.xml
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Protocol.xml
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Lime.Transport.Tcp.xml
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Newtonsoft.Json.xml
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\System.Threading.Tasks.Dataflow.xml
+D:\Src\Decom-Bot\Decom Bot\bin\Debug\Takenet.MessagingHub.Client.xml
+D:\Src\Decom-Bot\Decom Bot\obj\Debug\Decom Bot.dll
+D:\Src\Decom-Bot\Decom Bot\obj\Debug\Decom Bot.pdb
