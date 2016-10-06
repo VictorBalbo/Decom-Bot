@@ -16,5 +16,5 @@ This application was builted for:
 # COMPETIÇÃO 
 ## DECOM Celebrations 2016: Dev Olympics
 
-![](images/logo-decom-celebrations.png)
+![](src/images/logo-decom-celebrations.png)
 
