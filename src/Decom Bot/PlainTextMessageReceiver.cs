@@ -63,6 +63,16 @@ namespace Decom_Bot
                 case "engenharia de computacao":
                     await OpenEngenhariaMenuAsync(message.From, cancellationToken);
                     break;
+                case "test":
+                case "teste":
+                case "testando":
+                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://lh4.googleusercontent.com/FdIxmdxCYgwe6GJlT30-O-_1C-A_F08OndoOdBKYdK3UmYAXoqZCS9bazC5miIF3lT5WV1cGy5haVcU=w1366-h589"), PreviewUri = new Uri("https://lh4.googleusercontent.com/FdIxmdxCYgwe6GJlT30-O-_1C-A_F08OndoOdBKYdK3UmYAXoqZCS9bazC5miIF3lT5WV1cGy5haVcU=w1366-h589"), Size = 300 }, message.From, cancellationToken);
+                    break;
+                case "valeu":
+                case "vlw":
+                case "obrigado":
+                    await _sender.SendMessageAsync(new MediaLink { Uri = new Uri("https://lh5.googleusercontent.com/JylOk6iQ0eQOCZTUjx2wPyuamC-JSdimJthc1dj8jSSr94buZrAcQN2RGbSBr_GwCOdA-mB00M8Et5Y=w1366-h589"), PreviewUri = new Uri("https://lh5.googleusercontent.com/JylOk6iQ0eQOCZTUjx2wPyuamC-JSdimJthc1dj8jSSr94buZrAcQN2RGbSBr_GwCOdA-mB00M8Et5Y=w1366-h589"), Size = 300 }, message.From, cancellationToken);
+                    break;
                 default:
                     await OpenMainMenuAsync(message.From, cancellationToken);
                     break;
