@@ -202,10 +202,13 @@ namespace Decom_Bot
 
             await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Informática... 👏", from, cancellationToken);
 
-            var documentCollection = new DocumentCollection
+            if (isFromFacebookMessage(from.ToString()))
             {
-                Items = new DocumentSelect[]
+
+                var documentCollection = new DocumentCollection
                 {
+                    Items = new DocumentSelect[]
+                    {
                     new DocumentSelect
                     {
                         Header = new DocumentContainer
@@ -213,7 +216,7 @@ namespace Decom_Bot
                             Value = new MediaLink
                             {
                                 //TODO: Foto aqui
-                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
+                                Uri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
                             }
@@ -227,7 +230,8 @@ namespace Decom_Bot
                                     Value = new WebLink
                                     {
                                         Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
-                                        Title = "Calendário escolar"
+                                        Title = "Calendário escolar",
+
                                     }
                                 }
                             }
@@ -240,7 +244,7 @@ namespace Decom_Bot
                             Value = new MediaLink
                             {
                                 //TODO: Foto aqui
-                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
+                                Uri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
                                 Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
                                 Title = "Horário das aulas"
                             }
@@ -267,7 +271,7 @@ namespace Decom_Bot
                             Value = new MediaLink
                             {
                                 //TODO: Foto aqui
-                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
+                                Uri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
                             }
@@ -287,11 +291,47 @@ namespace Decom_Bot
                             }
                         }
                     }
-                },
-                ItemType = DocumentSelect.MediaType
-            };
+                    },
+                    ItemType = DocumentSelect.MediaType
+                };
 
-            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+                await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+            }
+            else
+            {
+                var calendario = new WebLink
+                {
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                    Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                    Title = "Calendário escolar",
+                    PreviewUri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
+
+                };
+                await _sender.SendMessageAsync(calendario, from, cancellationToken);
+
+                var horario = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
+                    Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                    Title = "Horário das aulas",
+                    PreviewUri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
+                };
+                await _sender.SendMessageAsync(horario, from, cancellationToken);
+
+                var matriz = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                    Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                    Title = "Matriz currícular",
+                    PreviewUri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
+                };
+                await _sender.SendMessageAsync(matriz, from, cancellationToken);
+            }
 
         }
 
@@ -300,11 +340,13 @@ namespace Decom_Bot
             await _sender.SendMessageAsync("💡 O nosso curso de Redes de Computadores foi formado em 2009 partir de modificações profundas no antigo curso de Informática Industrial. Formado pela necessidade do mercado de profissionais habilitados para configurar e dar manutenção dispositivos de comunicação e softwares em equipamentos de redes", from, cancellationToken);
 
             await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Redes... 👏", from, cancellationToken);
-
-            var documentCollection = new DocumentCollection
+            if (isFromFacebookMessage(from.ToString()))
             {
-                Items = new DocumentSelect[]
+
+                var documentCollection = new DocumentCollection
                 {
+                    Items = new DocumentSelect[]
+                    {
                     new DocumentSelect
                     {
                         Header = new DocumentContainer
@@ -341,11 +383,41 @@ namespace Decom_Bot
                             }
                         }
                     }
-                },
-                ItemType = DocumentSelect.MediaType
-            };
+                    },
+                    ItemType = DocumentSelect.MediaType
+                };
 
-            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+                await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+            }
+            else
+            {
+                var calendario = new WebLink
+                {
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                    Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                    Title = "Calendário escolar",
+
+                };
+                await _sender.SendMessageAsync(calendario, from, cancellationToken);
+
+                var horario = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
+                    Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                    Title = "Horário das aulas"
+                };
+                await _sender.SendMessageAsync(horario, from, cancellationToken);
+
+                var matriz = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
+                    Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                    Title = "Matriz currícular"
+                };
+                await _sender.SendMessageAsync(matriz, from, cancellationToken);
+            }
         }
 
         private async Task OpenEngenhariaMenuAsync(Node from, CancellationToken cancellationToken)
@@ -354,10 +426,13 @@ namespace Decom_Bot
 
             await _sender.SendMessageAsync("Olha só quanta coisa bacana eu sei sobre o curso de Engenharia d Computação... 👏", from, cancellationToken);
 
-            var documentCollection = new DocumentCollection
+            if (isFromFacebookMessage(from.ToString()))
             {
-                Items = new DocumentSelect[]
+
+                var documentCollection = new DocumentCollection
                 {
+                    Items = new DocumentSelect[]
+                    {
                     new DocumentSelect
                     {
                         Header = new DocumentContainer
@@ -394,14 +469,44 @@ namespace Decom_Bot
                             }
                         }
                     }
-                },
-                ItemType = DocumentSelect.MediaType
-            };
+                    },
+                    ItemType = DocumentSelect.MediaType
+                };
 
-            await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+                await _sender.SendMessageAsync(documentCollection, from, cancellationToken);
+            }
+            else
+            {
+                var calendario = new WebLink
+                {
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_ensino_superior.pdf"),
+                    Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
+                    Title = "Calendário escolar",
+
+                };
+                await _sender.SendMessageAsync(calendario, from, cancellationToken);
+
+                var horario = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
+                    Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                    Title = "Horário das aulas"
+                };
+                await _sender.SendMessageAsync(horario, from, cancellationToken);
+
+                var matriz = new WebLink
+                {
+                    //TODO: Foto aqui
+                    Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
+                    Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
+                    Title = "Matriz currícular"
+                };
+                await _sender.SendMessageAsync(matriz, from, cancellationToken);
+            }
         }
 
-        private async Task OpenContactMenuAsync(Node from, CancellationToken cancellationToken)
+    private async Task OpenContactMenuAsync(Node from, CancellationToken cancellationToken)
         {
             var select = new Select
             {
@@ -501,5 +606,14 @@ namespace Decom_Bot
             select.Options = selectOptions;
             await _sender.SendMessageAsync(select, from, cancellationToken);
         }
+        private bool isFromFacebookMessage(string from)
+        {
+            if (from.Contains("@messenger.gw.msging.net"))
+            {
+                return true;
+            }
+            return false;
+        }
+
     }
 }
