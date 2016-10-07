@@ -309,7 +309,6 @@ namespace Decom_Bot
 
                 var horario = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
                     Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
                     Title = "Horário das aulas",
@@ -320,7 +319,6 @@ namespace Decom_Bot
 
                 var matriz = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
                     Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                     Title = "Matriz currícular",
@@ -393,6 +391,8 @@ namespace Decom_Bot
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
                     Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                     Title = "Calendário escolar",
+                    PreviewUri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
 
                 };
                 await _sender.SendMessageAsync(calendario, from, cancellationToken);
@@ -401,7 +401,9 @@ namespace Decom_Bot
                 {
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
                     Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
-                    Title = "Horário das aulas"
+                    Title = "Horário das aulas",
+                    PreviewUri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
                 };
                 await _sender.SendMessageAsync(horario, from, cancellationToken);
 
@@ -409,7 +411,9 @@ namespace Decom_Bot
                 {
                     Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
                     Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
-                    Title = "Matriz currícular"
+                    Title = "Matriz currícular",
+                    PreviewUri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
                 };
                 await _sender.SendMessageAsync(matriz, from, cancellationToken);
             }
@@ -477,6 +481,8 @@ namespace Decom_Bot
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_ensino_superior.pdf"),
                     Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                     Title = "Calendário escolar",
+                    PreviewUri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
 
                 };
                 await _sender.SendMessageAsync(calendario, from, cancellationToken);
@@ -485,7 +491,9 @@ namespace Decom_Bot
                 {
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
                     Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
-                    Title = "Horário das aulas"
+                    Title = "Horário das aulas",
+                    PreviewUri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
                 };
                 await _sender.SendMessageAsync(horario, from, cancellationToken);
 
@@ -493,7 +501,9 @@ namespace Decom_Bot
                 {
                     Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
                     Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
-                    Title = "Matriz currícular"
+                    Title = "Matriz currícular",
+                    PreviewUri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
+                    PreviewType = new MediaType(MediaType.DiscreteTypes.Image, MediaType.SubTypes.JPeg)
                 };
                 await _sender.SendMessageAsync(matriz, from, cancellationToken);
             }
