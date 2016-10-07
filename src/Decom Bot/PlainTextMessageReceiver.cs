@@ -215,7 +215,6 @@ namespace Decom_Bot
                         {
                             Value = new MediaLink
                             {
-                                //TODO: Foto aqui
                                 Uri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
@@ -243,7 +242,6 @@ namespace Decom_Bot
                         {
                             Value = new MediaLink
                             {
-                                //TODO: Foto aqui
                                 Uri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
                                 Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
                                 Title = "Horário das aulas"
@@ -270,7 +268,6 @@ namespace Decom_Bot
                         {
                             Value = new MediaLink
                             {
-                                //TODO: Foto aqui
                                 Uri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
@@ -402,7 +399,6 @@ namespace Decom_Bot
 
                 var horario = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
                     Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
                     Title = "Horário das aulas"
@@ -411,7 +407,6 @@ namespace Decom_Bot
 
                 var matriz = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
                     Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                     Title = "Matriz currícular"
@@ -488,7 +483,6 @@ namespace Decom_Bot
 
                 var horario = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
                     Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
                     Title = "Horário das aulas"
@@ -497,7 +491,6 @@ namespace Decom_Bot
 
                 var matriz = new WebLink
                 {
-                    //TODO: Foto aqui
                     Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
                     Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                     Title = "Matriz currícular"
