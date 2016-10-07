@@ -8,7 +8,7 @@ For now our chatbot bot is published on 4 channels:
 
 1. [Blip (Android App)](https://goo.gl/2jVpYQ)
 2. [Facebook Messenger](http://m.me/591644264350170) (ou procure por DECOM BOT)
-3. [Telegram]()
+3. [Telegram](http://telegram.me/decom_bot)
 4. Email - envie email para decombot@blip.ai
 
 This application was builted for:
