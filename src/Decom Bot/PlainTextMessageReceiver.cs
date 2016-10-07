@@ -210,23 +210,26 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                //TODO: Foto aqui
+                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
                             }
-                        }
-                    },
-                    new DocumentSelect
-                    {
-                        Header = new DocumentContainer
+                        },
+                        Options = new DocumentSelectOption[]
                         {
-                            Value = new WebLink
+                            new DocumentSelectOption
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
-                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
-                                Title = "Horário das aulas"
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                        Title = "Calendário escolar"
+                                    }
+                                }
                             }
                         }
                     },
@@ -234,11 +237,53 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                //TODO: Foto aqui
+                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
+                                Text = "Não importa se vc é da INF01, 2 ou 3... aqui estão todos os horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_informatica/horarios_tec_informatica.zip"),
+                                        Title = "Horário das aulas"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new MediaLink
+                            {
+                                //TODO: Foto aqui
+                                Uri = new Uri("https://media.riffsy.com/images/4471b0db4f631ed1f4b698b71f2c6edc/raw"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular-Informatica.pdf"),
+                                        Title = "Matriz currícular"
+                                    }
+                                }
                             }
                         }
                     }
