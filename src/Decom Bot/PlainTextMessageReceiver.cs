@@ -346,23 +346,26 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                Uri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
                             }
-                        }
-                    },
-                    new DocumentSelect
-                    {
-                        Header = new DocumentContainer
+                        },
+                        Options = new DocumentSelectOption[]
                         {
-                            Value = new WebLink
+                            new DocumentSelectOption
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
-                                Text = "Veja aqui todos os seus horários 😉",
-                                Title = "Horário das aulas"
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_escolar_integrado.pdf"),
+                                        Title = "Calendário escolar",
+
+                                    }
+                                }
                             }
                         }
                     },
@@ -370,11 +373,51 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
+                                Uri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
+                                Text = "Veja aqui todos os seus horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/tec_redes/horarios_tec_redes.zip"),
+                                        Title = "Horário das aulas"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new MediaLink
+                            {
+                                Uri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curric__redes.pdf"),
+                                        Title = "Matriz currícular"
+                                    }
+                                }
                             }
                         }
                     }
@@ -436,23 +479,26 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_ensino_superior.pdf"),
+                                Uri = new Uri("http://conozcaescazu.com/wp-content/uploads/sites/12/2016/09/calendario-png.png"),
                                 Text = "Fique atento, não perca nenhuma aula e aproveite muito todos os feriados 😊",
                                 Title = "Calendário escolar"
                             }
-                        }
-                    },
-                    new DocumentSelect
-                    {
-                        Header = new DocumentContainer
+                        },
+                        Options = new DocumentSelectOption[]
                         {
-                            Value = new WebLink
+                            new DocumentSelectOption
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
-                                Text = "Não perca a hora, veja aqui todos os seus horários 😉",
-                                Title = "Horário das aulas"
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/calendarios/calendario_ensino_superior.pdf"),
+                                        Title = "Calendário escolar",
+
+                                    }
+                                }
                             }
                         }
                     },
@@ -460,11 +506,51 @@ namespace Decom_Bot
                     {
                         Header = new DocumentContainer
                         {
-                            Value = new WebLink
+                            Value = new MediaLink
                             {
-                                Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
+                                Uri = new Uri("http://s2.glbimg.com/NHoTMK3Vzea9MIPQdvBhKJTiTpA=/1200x630/filters:max_age(3600)/s02.video.glbimg.com/deo/vi/13/43/4814313"),
+                                Text = "Não perca a hora, veja aqui todos os seus horários 😉",
+                                Title = "Horário das aulas"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/site/alunos/arquivos_downloads/horarios/eng_computacao/horario_aulas_engcomp.pdf"),
+                                        Title = "Horário das aulas"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    new DocumentSelect
+                    {
+                        Header = new DocumentContainer
+                        {
+                            Value = new MediaLink
+                            {
+                                Uri = new Uri("http://www.saojose.br/wp-content/uploads/2013/01/tabela_pedagogia1.png"),
                                 Text = "Encontre todas as disciplinas e suas dependências aqui na matriz currícular!",
                                 Title = "Matriz currícular"
+                            }
+                        },
+                        Options = new DocumentSelectOption[]
+                        {
+                            new DocumentSelectOption
+                            {
+                                Label = new DocumentContainer
+                                {
+                                    Value = new WebLink
+                                    {
+                                        Uri = new Uri("http://decom.cefetmg.br/galerias/arquivos_download/outros/matriz_curricular.pdf"),
+                                        Title = "Matriz currícular"
+                                    }
+                                }
                             }
                         }
                     }
