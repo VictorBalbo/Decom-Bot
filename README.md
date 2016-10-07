@@ -6,10 +6,10 @@ With this chatbot you can easily search and find a lot of informations about our
 For now our chatbot bot is published on 4 channels:
 (click bellow to use)
 
-1. [Blip (Android App)]()
-2. [Facebook Messenger]()
+1. [Blip (Android App)](https://goo.gl/2jVpYQ)
+2. [Facebook Messenger](http://m.me/591644264350170) (ou procure por DECOM BOT)
 3. [Telegram]()
-4. [Skype]()
+4. Email - envie email para decombot@blip.ai
 
 This application was builted for:
 
